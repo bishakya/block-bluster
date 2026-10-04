@@ -5,6 +5,8 @@ metadata:
   name: 5-demo-helm-release-git-helm-bb-app
   namespace: flux-system
 spec:
+  install:
+    createNamespace: true
   chart:
     spec:
       chart: helm-chart
